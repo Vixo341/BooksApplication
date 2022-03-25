@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BooksApplication.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitofWork _unitofWork;
