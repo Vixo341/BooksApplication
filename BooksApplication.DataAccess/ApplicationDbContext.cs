@@ -1,4 +1,5 @@
 ﻿using BooksApplication.Models;
+using BooksApplication.Models.ViewModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +18,8 @@ namespace BooksApplication.DataAccess
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         public DbSet<Company> Companies { get; set; }
+
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
 
     }
 }
